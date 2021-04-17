@@ -8,6 +8,16 @@ function InitDashboard(){
 
     d3.json("samples.json").then(function(data){
         console.log(data);
+
+        var samplesNames =  data.names;
+
+        samplesNames.forEach(sampleId => {
+            selector.append("option")
+                .text(sampleId)
+                .property("value", sampleId);
+        });
+
+
     });
 
     // Update the bargraph
