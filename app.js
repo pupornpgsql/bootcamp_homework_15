@@ -117,6 +117,8 @@ function DrawGaugeChart(wfreq){
     console.log(`ShowMetadata("In DrawGaugeChart wfreq=" + ${wfreq})`);
 
     // https://plotly.com/javascript/gauge-charts/
+    // https://plotly.com/python/gauge-charts/
+    
 
   // Enter the washing frequency between 0 and 180
   var level = parseFloat(wfreq) * 20;
