@@ -1,4 +1,5 @@
 // This code is based in Office hours training
+// https://plotly.com/javascript/
 
 console.log("app.js loaded");
 
@@ -115,13 +116,15 @@ function DrawBubbleChart(sampleId){
 function DrawGaugeChart(wfreq){
     console.log(`ShowMetadata("In DrawGaugeChart wfreq=" + ${wfreq})`);
 
+    // https://plotly.com/javascript/gauge-charts/
+
   // Enter the washing frequency between 0 and 180
   var level = parseFloat(wfreq) * 20;
 
-  // Trig to calc meter point
+  // Arrow x,y
   var degrees = 180 - level;
-  var radius = 0.5;
-  var radians = (degrees * Math.PI) / 180;
+  var radius = 0.7;
+  var radians = (degrees * Math.PI) / 180; // Convert degrees in radians
   var x = radius * Math.cos(radians);
   var y = radius * Math.sin(radians);
 
@@ -201,7 +204,7 @@ function DrawGaugeChart(wfreq){
   };
 
   var GAUGE = document.getElementById("gauge");
-  Plotly.newPlot(GAUGE, data, layout);
+  Plotly.newPlot(GAUGE, data, layout); // Draw Graph
 }
 
 function ShowMetadata(sampleId){
