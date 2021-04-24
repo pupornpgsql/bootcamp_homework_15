@@ -6,4 +6,4 @@ Create DrawBargraph function to draw the bar graph
 Create DrawBubbleChart function to draw the BubbleChart graph
 Create DrawGaugeChart function to draw the GaugeChart graph
 Create ShowMetadata function to Show Metadata in panel tag
-Create optionChanged function associated to selDataset id as <select id="selDataset" onchange="optionChanged(this.value)"></select>
+Create optionChanged function associated to selDataset id as  id="selDataset" onchange="optionChanged(this.value)"
